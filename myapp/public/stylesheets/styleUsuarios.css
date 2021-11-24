@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    background-color: #ddd;
+    font-family: 'Zen Kurenaido','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    min-height: 100vh;
+}
+
+/* ENCABEZADO */
+.cabecera {
+    background-color: #fff;
+    border-radius: 0 0 30px 30px;
+    height: 20vh;
+    display: grid;
+    grid-template-rows: 70% 30%;
+    grid-template-columns: 90% 10%;
+    box-shadow: 0 1px 10px rgb(0 0 0 / 50%);
+}
+
+.logo {
+    grid-row: 1/2;
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-domus {
+    border-radius: 50%;
+    width: 14vh;
+    padding: 10px;
+    float: left;
+    margin-left: 1.5em;
+}
+
+.titulo {
+    line-height: 14vh;
+    font-size: 4.7em;
+}
+
+.titulo:hover {
+    cursor: pointer;
+}
+
+.cerrar {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cerrar-sesion {
+    font-size: 2em;
+}
+
+.cerrar-sesion:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.usuario {
+    grid-row: 2/3;
+    grid-column: 1/3;
+    display: block;
+    margin: 0 auto;
+    font-size: 1.2em;
+    border-top: 1px solid #371C8B;
+}
+
+/* CUERPO */
+.principal {
+    width: 100%;
+    min-height: 72vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2em;
+    margin: 2em 0;
+    box-shadow: 0 1px 10px rgb(0 0 0 / 50%);
+}
+
+.menu-item {
+    width: 28%;
+    height: 26em;
+    background-color: #eee;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 3fr 2fr;
+    margin: 2em;
+    color: #fff;
+    box-shadow: 0 1px 10px rgb(0 0 0 / 50%);
+}
+
+.icono {
+    font-size: 12em;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarea {
+    grid-row: 2/3;
+    background-color: #371C8B;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.menu-item:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* PIE DE PAGINA */
+.pie {
+    background-color: #fff;
+    border-radius: 30px 30px 0 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+    box-shadow: 0 1px 10px rgb(0 0 0 / 50%);
+}
+
+.logo-domus {
+    border-radius: 50%;
+    width: 4em;
+}

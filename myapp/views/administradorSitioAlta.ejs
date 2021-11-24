@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Administrador del Sitio - Alta</title>
+    <link rel="icon" href="/images/domus-modified.png">
+    <link rel="stylesheet" href="/stylesheets/styleUsuarios.css">
+    <link rel="stylesheet" href="/stylesheets/styleTareas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a6ef08a58c.js" crossorigin="anonymous"></script>
+</head>
+<body class="contenedor">
+    <header class="cabecera">
+        <div class="logo">
+            <h1 class="titulo" id="titulo">INMOBILIARIA DOMUS</h1>
+        </div>
+        <div class="cerrar">
+            <i class="cerrar-sesion fas fa-sign-out-alt" id="cerrar-sesion"></i>
+        </div>
+        <div class="usuario">
+            <h2>ADMINISTRADOR DEL SITIO</h2>
+        </div>
+    </header>
+    <main class="principal">
+        <div class="subtitulo">
+            <h3>ALTA DE USUARIOS</h3>
+        </div>
+        <div class="superMenu">
+            <div class="menu cliente">
+                <form class="datosCliente" id="form-altaUsuario" action="administradorSitioAlta" method="POST">
+                    <label class="datos">NOMBRE Y APELLIDO</label>
+                    <input class="entradas" name="nombre" required>
+                    <label class="datos">DNI</label>
+                    <input class="entradas" type="number" name="dni" required>
+                    <label class="datos">PUESTO DE TRABAJO</label>
+                    <select class="entradas " name="rol">
+                        <option value="secretary" >Secretaria/o</option>
+                        <option value="agInm">Agente Inmobiliario</option>
+                        <option value="empMark">Empleada/o de Marketing</option>
+                        <option value="adminCaja">Administrador/a de Caja</option>
+                        <option value="jefComer">Jefe/a de Comercialización</option>
+                        <option value="jefAdmin">Jefe/a de Administración</option>
+                        <option value="admin">Administrador del Sitio</option>
+                        <option value="gerenteG">Gerente General</option>
+                    </select>
+                    <label class="datos">TELÉFONO DE CONTACTO</label>
+                    <input class="entradas" type="tel" name="telefono" required>
+                    <label class="datos">TELÉFONO DE CONTACTO ALTERNATIVO</label>
+                    <input class="entradas" type="tel" name="telAlt" required>
+                    <label class="datos">DIRECCIÓN DE CORREO ELECTRÓNICO</label>
+                    <input class="entradas" type="email" name="mail" required>
+                    <label class="datos">NOMBRE DE USUARIO</label>
+                    <input class="entradas" name="username" required>
+                    <label class="datos">CONTRASEÑA</label>
+                    <input class="entradas" type="password" name="passw" required>
+                    <input type="submit" value="Añadir Usuario" id="agendar">
+                    <a href="administradorSitioMenu" class="btn btn-danger" id="agendar">Cancelar</a>
+                    
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="pie">
+        <img src="/images/domus.jpg" alt="Logo Domus" class="logo-domus">
+        <p>DOMUS 2.0 Copyright 2021</p>
+    </footer>
+    <script src="/javascripts/codigo.js"></script>
+  
+</body>
+</html>

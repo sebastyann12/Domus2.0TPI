@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Administrador del Sitio - Baja</title>
+    <link rel="icon" href="/images/domus-modified.png">
+    <link rel="stylesheet" href="/stylesheets/styleUsuarios.css">
+    <link rel="stylesheet" href="/stylesheets/styleTareas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a6ef08a58c.js" crossorigin="anonymous"></script>
+</head>
+<body class="contenedor">
+    <header class="cabecera">
+        <div class="logo">
+            <h1 class="titulo" id="titulo">INMOBILIARIA DOMUS</h1>
+        </div>
+        <div class="cerrar">
+            <i class="cerrar-sesion fas fa-sign-out-alt" id="cerrar-sesion"></i>
+        </div>
+        <div class="usuario">
+            <h2>ADMINISTRADOR DEL SITIO</h2>
+        </div>
+    </header>
+    <main class="principal">
+        <div class="subtitulo">
+            <h3>BAJA DE USUARIOS</h3>
+        </div>
+        <div class="superMenu">
+            <div class="menu cliente">
+                <form class="datosCliente" action="administradorSitioBaja2.html">
+                    <label class="datos" for="dni">CÓDIGO DE CLIENTE</label>
+                    <input class="entradas" type="number" required>
+                    <input type="submit" value="Agendar" id="agendar">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="pie">
+        <img src="/images/domus.jpg" alt="Logo Domus" class="logo-domus">
+        <p>DOMUS 2.0 Copyright 2021</p>
+    </footer>
+    <script src="/javascripts/codigo.js"></script>
+</body>
+</html>
